@@ -27,7 +27,6 @@ public class GitLogReader {
             PredictModel model = new PredictModel("model/model.model");
             for (Slice s : slices) {
                 System.out.println(model.predict(s));
-                //System.out.println(s);
             }
         }
         catch (Exception e) {

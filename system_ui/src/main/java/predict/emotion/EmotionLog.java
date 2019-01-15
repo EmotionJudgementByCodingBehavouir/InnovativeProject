@@ -9,6 +9,15 @@ public class EmotionLog {
         logTime = (Date)date.clone();
         this.emotion = emotion;
     }
+
+    public Date getLogTime() {
+        return logTime;
+    }
+
+    public Emotion getEmotion() {
+        return emotion;
+    }
+
     public String toString() {
         return logTime.toString() + " " + emotion.toString();
     }
