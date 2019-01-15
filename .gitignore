@@ -1,0 +1,2 @@
+#忽略mvn编译产生的target文件夹
+system_ui/target
