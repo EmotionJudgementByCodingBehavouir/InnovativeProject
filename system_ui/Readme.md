@@ -22,6 +22,7 @@
 ## 依赖包
 * java-string-similarity 1.1.0
 * weka-stable 3.8.0
+* JMathPlot 1.0.1
 * （若有增加，请及时在pom文件和readme中添加）
 # 分工
 ## 王雅薪
