@@ -3,14 +3,10 @@ package predict.model;
 import predict.emotion.Emotion;
 import predict.emotion.EmotionLog;
 import preprocess.Slice;
-import weka.classifiers.Evaluation;
 import weka.classifiers.trees.*;
 import weka.core.*;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.Random;
+import java.io.*;
 
 public class PredictModel {
     private RandomForest randomForest;
@@ -47,7 +43,7 @@ public class PredictModel {
         return randomForest.toString();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         PredictModel m = new PredictModel("model.model");
         System.out.println(m);
     }
