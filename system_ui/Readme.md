@@ -66,8 +66,7 @@
 * 将gitlog，compilelog按固定时间切片。
 * public ArrayList&lt;Slice&gt; getLogSlice(PatternedLog pLog, CompileLog cLog, int interval)
 ### 代码示例
-<pre>
-<code>
+``` java
 	public static void main(String[] args) {
         try {
             IntermediateLog log = new GitLogReader("E:\\PA_project\\getlog\\Log\\151242017\\detail\\Week5.log").getIntermediateLog();
@@ -83,30 +82,25 @@
             e.printStackTrace();
         }
     }
-</code>
-</pre>
+```
 ## model包
 ### emotion包
 #### Emotion枚举
-<pre>
-<code>
+``` java
 public enum Emotion {
     FLOW, NOTFLOW;
 }
-</code>
-</pre>
+```
 #### EmotionLog类
 * 保存了一个情绪记录和对应的时间
-* <pre>
-<code>
+``` java
 public class EmotionLog {
     	private Date logTime;
     	private Emotion emotion;
     	public EmotionLog(Date date, Emotion emotion) {
         		...
     	}
-</code>
-</pre>
+```
 * public Date getLogTime()  
 获得时间
 * public Emotion getEmotion()  
@@ -118,3 +112,15 @@ public class EmotionLog {
 通过文件，加载模型
 * public EmotionLog predict(Slice slice)  
 传入一个Slice，得到一个EmotionLog
+
+### visualize包
+#### ImageGenerator类
+* 输入：模型 + 记录，输出：可视化的情绪变化图片
+``` java
+//构造函数
+public ImageGenerator(String modelPath, String gitLogPath, String compileLogPath){...}
+//生成图片
+public void generate(){...}
+//获取图片地址
+public ArrayList<String> getImagesPaths() {...}
+```
