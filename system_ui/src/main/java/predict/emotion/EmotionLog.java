@@ -2,7 +2,7 @@ package predict.emotion;
 
 import java.util.Date;
 
-public class EmotionLog {
+public class EmotionLog implements Comparable<EmotionLog>{
     private Date logTime;
     private Emotion emotion;
     public EmotionLog(Date date, Emotion emotion) {
@@ -20,5 +20,10 @@ public class EmotionLog {
 
     public String toString() {
         return logTime.toString() + " " + emotion.toString();
+    }
+
+    @Override
+    public int compareTo(EmotionLog o) {
+        return logTime.compareTo(o.logTime);
     }
 }

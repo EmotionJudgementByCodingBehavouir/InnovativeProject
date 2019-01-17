@@ -9,7 +9,14 @@ public class LogSlicer {
         ArrayList<Slice> seriesOfSlices = new ArrayList<>();
         Iterator<Date> cIt= cLog.getCompileLogIterator();
         Iterator<PatternedCommit> pIt = pLog.getPatternedLogIterator();
-        Date oldTime = pIt.next().getLogTime();
+
+        Date oldTime;
+        if(pIt.hasNext()) {
+            oldTime = pIt.next().getLogTime();
+        }
+        else {
+            oldTime = new Date();
+        }
         pIt = pLog.getPatternedLogIterator();
         ArrayList<Date> compileSlice = new ArrayList<>();
         ArrayList<PatternedCommit> pCommitSlice = new ArrayList<>();

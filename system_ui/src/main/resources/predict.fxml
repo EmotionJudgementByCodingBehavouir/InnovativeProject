@@ -35,7 +35,7 @@
                </GridPane.margin>
             </Button>
             <Button fx:id="chooseCompileLog" mnemonicParsing="false" onAction="#chooseCompileLogHandler" prefHeight="39.0" prefWidth="180.0" text="Button" GridPane.columnIndex="2" />
-            <Canvas fx:id="displayCanvas" height="692.0" width="993.0" GridPane.columnSpan="4" GridPane.rowIndex="1" />
+            <Canvas fx:id="displayCanvas" height="705.0" width="1123.0" GridPane.columnSpan="4" GridPane.rowIndex="1" />
             <Button fx:id="display" mnemonicParsing="false" onAction="#displayHandler" prefHeight="39.0" prefWidth="180.0" text="Button" GridPane.columnIndex="3" />
             <Button fx:id="switchButton" mnemonicParsing="false" onAction="#switchHandler" prefHeight="39.0" prefWidth="180.0" text="Button" GridPane.columnIndex="4" />
          </children>

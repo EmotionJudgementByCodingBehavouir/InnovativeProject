@@ -76,9 +76,7 @@ public class PredictController implements Initializable {
     }
 
     @FXML private void displayHandler() {
-        ImageGenerator imageGenerator = new ImageGenerator(modelPath, gitLogPath, compileLogPath);
-        imageGenerator.generate();
-        ArrayList<String> imagesPaths = imageGenerator.getImagesPaths();
+
     }
 
     @FXML private void switchHandler() {
