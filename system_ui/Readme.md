@@ -115,12 +115,17 @@ public class EmotionLog {
 
 ### visualize包
 #### ImageGenerator类
-* 输入：模型 + 记录，输出：可视化的情绪变化图片
+* 输入：模型 + 学号
+* 输出：通过调用getImagesPaths方法可以返回图片的地址
+* 注意事项：①需要调用静态方法setBasePath和setTargetPath设置数据集路径和图片输出保存的路径。
+* 接口如下:
 ``` java
+//使用前调用
+public static void setBasePath(String basePath) {ImageGenerator.basePath = basePath;}
+public static void setTargetPath(String targetPath) {ImageGenerator.targetPath = targetPath; }
 //构造函数
-public ImageGenerator(String modelPath, String gitLogPath, String compileLogPath){...}
-//生成图片
-public void generate(){...}
+public ImageGenerator(String modelPath, String id){...}
 //获取图片地址
 public ArrayList<String> getImagesPaths() {...}
+//
 ```

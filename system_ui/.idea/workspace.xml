@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9754ed4-1936-4be8-acae-057975fbc9b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/nju/cs/PredictController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/edu/nju/cs/PredictController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/predict/emotion/EmotionLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/predict/emotion/EmotionLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preprocess/LogSlicer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preprocess/LogSlicer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/predict.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/predict.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="a9754ed4-1936-4be8-acae-057975fbc9b4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="170" selection-start-line="170" selection-end-line="170" />
+            <state relative-caret-position="171">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="36" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -285,7 +278,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -405,7 +398,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547729291698" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547729606565" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -512,15 +505,16 @@
       <workItem from="1547548942607" duration="4281000" />
       <workItem from="1547562590769" duration="72000" />
       <workItem from="1547606650534" duration="301000" />
-      <workItem from="1547607174693" duration="23487000" />
+      <workItem from="1547607174693" duration="23769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33047000" />
+    <option name="totallyTimeSpent" value="33329000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23257373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -778,8 +772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        <state relative-caret-position="171">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="36" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
