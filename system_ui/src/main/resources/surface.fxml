@@ -6,10 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            stylesheets="/system.css"
-            fx:controller="cn.edu.nju.cs.Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="/system.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.nju.cs.Controller">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="predictButton" layoutX="266.0" layoutY="170.0" mnemonicParsing="false" onAction="#predictHandler" text="Button" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

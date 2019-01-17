@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 
 import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import javafx.scene.canvas.Canvas;
@@ -15,16 +16,17 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import predict.emotion.*;
-import predict.model.*;
+import visualize.ImageGenerator;
 
 public class PredictController implements Initializable {
     @FXML Button chooseModel;
     @FXML Button chooseGitLog;
     @FXML Button chooseCompileLog;
     @FXML Button display;
+    @FXML Button switchButton;
     @FXML Canvas displayCanvas;
     @FXML GridPane panel;
+
     private Image background = new Image("defaultCanvas.png");
     private String modelPath = null;
     private String gitLogPath = null;
@@ -74,6 +76,12 @@ public class PredictController implements Initializable {
     }
 
     @FXML private void displayHandler() {
+        ImageGenerator imageGenerator = new ImageGenerator(modelPath, gitLogPath, compileLogPath);
+        imageGenerator.generate();
+        ArrayList<String> imagesPaths = imageGenerator.getImagesPaths();
+    }
+
+    @FXML private void switchHandler() {
 
     }
     //初始化窗口：设置文本，填充默认背景
@@ -83,6 +91,7 @@ public class PredictController implements Initializable {
         chooseCompileLog.setText("选择编译日志");
         display.setText("生成结果");
         display.setDisable(true);
+        switchButton.setText("切换显示");
         GraphicsContext gc = displayCanvas.getGraphicsContext2D();
         gc.drawImage(background,0,0,displayCanvas.getWidth(),displayCanvas.getHeight());
     }
