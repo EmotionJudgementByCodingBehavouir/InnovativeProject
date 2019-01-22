@@ -1,4 +1,5 @@
 package visualize;
+import javafx.scene.image.Image;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtils;
 import org.jfree.chart.JFreeChart;
@@ -35,7 +36,7 @@ public class ImageGenerator {
     private static String targetPath = "C:/Users/99752/Desktop/Images/";
     public static void setBasePath(String basePath) {ImageGenerator.basePath = basePath;}
     public static void setTargetPath(String targetPath) {ImageGenerator.targetPath = targetPath; }
-    private ArrayList<String> imagesPaths = new ArrayList<>();
+    private ArrayList<Image> images = new ArrayList<>();
     //是否需要更新
     private boolean isDirty(String id){
         File path = new File(targetPath + id);
@@ -94,6 +95,14 @@ public class ImageGenerator {
         //不需要更新
         if(!isDirty(id)) {
             System.out.println("不需要更新");
+            File file = new File(targetPath +id+"/proportion.jpeg");
+            if(file.exists()) {
+                images.add(new Image("file:"+targetPath +id+"/proportion.jpeg"));
+            }
+            file = new File(targetPath +id+"/Trend.jpeg");
+            if(file.exists()) {
+                images.add(new Image("file:"+targetPath +id+"/Trend.jpeg"));
+            }
             return;
         }
         //需要更新
@@ -127,9 +136,8 @@ public class ImageGenerator {
         generateProportion();
         update();
     }
-    public ArrayList<String> getImages() {
-
-        return imagesPaths;
+    public ArrayList<Image> getImages() {
+        return images;
     }
 
 
@@ -162,8 +170,7 @@ public class ImageGenerator {
             //导出图片
             OutputStream os = new FileOutputStream(targetPath +id+"/proportion.jpeg");
             ChartUtils.writeChartAsJPEG(os,chart,1000,800);
-            imagesPaths.add(targetPath +id+"/proportion.jpeg");
-
+            images.add(new Image("file:"+targetPath +id+"/proportion.jpeg"));
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -216,7 +223,8 @@ public class ImageGenerator {
                 chart.getLegend().setItemFont(new Font("仿宋", Font.BOLD, 15));
                 OutputStream os = new FileOutputStream(targetPath +id+"/Trend.jpeg");
                 ChartUtils.writeChartAsJPEG(os,chart,1000,800);
-                imagesPaths.add(targetPath+id+"/Trend.jpeg");
+                //imagesPaths.add(targetPath+id+"/Trend.jpeg");
+                images.add(new Image("file:"+targetPath+id+"/Trend.jpeg"));
             }
         }
         catch (Exception e) {

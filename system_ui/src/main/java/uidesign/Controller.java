@@ -12,6 +12,7 @@ import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import visualize.ImageGenerator;
 
 import java.io.File;
 import java.util.*;
@@ -97,7 +98,8 @@ public class Controller{
         String s = studentInfos.get(row).getSID();
         System.out.println(s);
         GraphicsContext gc = ground.getGraphicsContext2D();
-        Image image = new Image("/171860507.png");
+        //Image image = new Image("/171860507.png");
+        Image image = new ImageGenerator(modelPath,s).getImages().get(0);
         gc.drawImage(image, 0, 50);
     }
 
@@ -117,6 +119,7 @@ public class Controller{
         File file = DataPathChooser.showDialog(null);
         if(file != null) {
             dataPath = file.getPath();
+            ImageGenerator.setBasePath(dataPath+"/");
         }
         System.out.println(dataPath);
     }
@@ -126,6 +129,7 @@ public class Controller{
         File file = TargetPathChooser.showDialog(null);
         if(file != null) {
             targetPath = file.getPath();
+            ImageGenerator.setTargetPath(targetPath+"/");
         }
         System.out.println(targetPath);
     }

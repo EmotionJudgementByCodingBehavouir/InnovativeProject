@@ -4,14 +4,8 @@
     <list default="true" id="a9754ed4-1936-4be8-acae-057975fbc9b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/nju/cs/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uidesign/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/nju/cs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uidesign/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/nju/cs/PredictController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/edu/nju/cs/PredictWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/predict.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/surface.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/surface.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uidesign/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uidesign/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,17 +15,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="6640112">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="196" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="196" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2343">
-              <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            <state relative-caret-position="181">
+              <caret line="226" column="45" selection-start-line="226" selection-start-column="45" selection-end-line="226" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#isDirty#0;class#ImageGenerator#0" />
-                <element signature="method#update#0;class#ImageGenerator#0" />
+                <element signature="e#5158#5159#0" expanded="true" />
+                <element signature="e#5187#5188#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,12 +64,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/surface.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-              <folding>
-                <element signature="n#Menu#0;n#menus#0;n#MenuBar#0;n#children#0;n#Pane#0;n#!!top" />
-                <element signature="n#Menu#1;n#menus#0;n#MenuBar#0;n#children#0;n#Pane#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="342">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -63,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="1602">
+              <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,16 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="361">
-                <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -90,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/StudentInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
               <folding>
                 <element signature="e#79#80#0" expanded="true" />
                 <element signature="e#103#104#0" expanded="true" />
@@ -108,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,11 +171,11 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/edu/nju/cs/PredictController.java" />
         <option value="$PROJECT_DIR$/src/main/java/predict/emotion/EmotionLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/preprocess/LogSlicer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/surface.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/uidesign/StudentInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uidesign/Controller.java" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/src/main/java/uidesign/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java" />
       </list>
     </option>
   </component>
@@ -221,9 +227,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -288,6 +294,14 @@
               <item name="system_ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="visualize" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="system_ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="system_ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -311,7 +325,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548141890053" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548146900070" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -339,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="GitLogReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="preprocess.GitLogReader" />
       <module name="system_ui" />
@@ -366,7 +380,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="uidesign.Main" />
       <module name="system_ui" />
       <extension name="coverage">
@@ -410,11 +424,10 @@
       <item itemvalue="Application.GitLogReader" />
       <item itemvalue="Application.PredictModel" />
       <item itemvalue="Application.ImageGenerator" />
-      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ImageGenerator" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.PredictModel" />
@@ -437,17 +450,18 @@
       <workItem from="1547562590769" duration="72000" />
       <workItem from="1547606650534" duration="301000" />
       <workItem from="1547607174693" duration="23769000" />
+      <workItem from="1548145243702" duration="1655000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33329000" />
+    <option name="totallyTimeSpent" value="34984000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23592493" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23927614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -457,7 +471,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20679887" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24504249" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25070822" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -486,6 +500,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/Readme.md" />
@@ -544,10 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -572,6 +585,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/system.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/predict.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/PredictWindow.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/PredictController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/predict/model/PredictModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/surface.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/StudentInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding>
+            <element signature="e#79#80#0" expanded="true" />
+            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/preprocess/PatternedLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -586,118 +648,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/system.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/predict.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/PredictWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/PredictController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1212">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/predict/model/PredictModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2343">
-          <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isDirty#0;class#ImageGenerator#0" />
-            <element signature="method#update#0;class#ImageGenerator#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/surface.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-          <folding>
-            <element signature="n#Menu#0;n#menus#0;n#MenuBar#0;n#children#0;n#Pane#0;n#!!top" />
-            <element signature="n#Menu#1;n#menus#0;n#MenuBar#0;n#children#0;n#Pane#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/StudentInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding>
-            <element signature="e#79#80#0" expanded="true" />
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#154#155#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uidesign/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="1602">
+          <caret line="121" column="50" selection-start-line="121" selection-start-column="50" selection-end-line="121" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="361">
-            <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
+    <entry file="file://$PROJECT_DIR$/src/main/java/visualize/ImageGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="226" column="45" selection-start-line="226" selection-start-column="45" selection-end-line="226" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5158#5159#0" expanded="true" />
+            <element signature="e#5187#5188#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
