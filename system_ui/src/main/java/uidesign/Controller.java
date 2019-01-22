@@ -6,6 +6,7 @@ import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
@@ -17,18 +18,17 @@ import javafx.stage.FileChooser;
 import visualize.ImageGenerator;
 
 import java.io.*;
+import java.net.URL;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class Controller{
+public class Controller implements Initializable {
     public Canvas ground;
     public TableView ShowId;
     public TableColumn ID;
     public RadioButton scale;
     public RadioButton tendency;
     private ObservableList<StudentInfo> studentInfos;
-
-
     private ConfigInfo config;
     private boolean DatasetChange;
     private boolean ScaleMap;
@@ -37,7 +37,7 @@ public class Controller{
 
     final ToggleGroup group = new ToggleGroup();
 
-    public Controller(){
+    public void initialize(URL url, ResourceBundle resourceBundle) {
         ArrayList<StudentInfo> origin = new ArrayList<>();
         studentInfos = FXCollections.observableArrayList(origin);
         config = new ConfigInfo();
@@ -49,6 +49,10 @@ public class Controller{
         DatasetChange = false;
         ScaleMap = true;
         Tendency = false; //默认比例图
+        scale.setToggleGroup(group);
+        scale.setSelected(true);
+        tendency.setToggleGroup(group);
+        tendency.setSelected(false);
     }
 
     public void toInitialize(ActionEvent actionEvent) throws IOException, ClassNotFoundException {
@@ -67,10 +71,6 @@ public class Controller{
         else{
             toLoadTableView();
         }
-        scale.setToggleGroup(group);
-        scale.setSelected(true);
-        tendency.setToggleGroup(group);
-        tendency.setSelected(false);
     }
     public void toLoadTableView() throws IOException {
         File file= new File(config.dataPath);
