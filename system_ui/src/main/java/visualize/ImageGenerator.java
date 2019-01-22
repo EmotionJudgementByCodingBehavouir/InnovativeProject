@@ -158,11 +158,11 @@ public class ImageGenerator {
 
             //设置图表标题等
             JFreeChart chart = ChartFactory.createPieChart("情绪比例图",dataset,true,false,false);
-            chart.setTitle(new TextTitle("情绪比例分布",new Font("仿宋",Font.BOLD,20)));
+            chart.setTitle(new TextTitle("情绪比例分布",new Font("黑体",Font.BOLD,20)));
             LegendTitle legendTitle = chart.getLegend(0);
-            legendTitle.setItemFont(new Font("仿宋",Font.TYPE1_FONT,16));
+            legendTitle.setItemFont(new Font("黑体",Font.TYPE1_FONT,16));
             PiePlot plot = (PiePlot)chart.getPlot();
-            plot.setLabelFont(new Font("宋体", Font.HANGING_BASELINE, 12));
+            plot.setLabelFont(new Font("黑体", Font.HANGING_BASELINE, 12));
             plot.setNoDataMessage("无数据显示");
             //设置百分比显示
             DecimalFormat decimalFormat = new DecimalFormat("0.00%");
@@ -219,10 +219,10 @@ public class ImageGenerator {
                 XYPlot plot = (XYPlot)chart.getPlot();
                 DateAxis dateAxis = (DateAxis)plot.getDomainAxis();
                 plot.setNoDataMessage("无数据显示");
-                dateAxis.setLabelFont(new Font("仿宋",Font.BOLD,16));
+                dateAxis.setLabelFont(new Font("黑体",Font.BOLD,16));
                 dateAxis.setTickLabelFont(new Font("仿体",Font.BOLD,12));  //垂直标题
-                chart.getTitle().setFont(new Font("仿宋",Font.BOLD,20));
-                chart.getLegend().setItemFont(new Font("仿宋", Font.BOLD, 15));
+                chart.getTitle().setFont(new Font("黑体",Font.BOLD,20));
+                chart.getLegend().setItemFont(new Font("黑体", Font.BOLD, 15));
                 OutputStream os = new FileOutputStream(targetPath +id+"/Trend.jpeg");
                 ChartUtils.writeChartAsJPEG(os,chart,1000,800);
                 //imagesPaths.add(targetPath+id+"/Trend.jpeg");
