@@ -91,17 +91,19 @@ public class ImageGenerator {
     }
     public ImageGenerator(String modelPath, String id) {
         this.id = id;
+        images.add(new Image("defaultCanvas.jpeg"));
+        images.add(new Image("defaultCanvas.jpeg"));
         //进行判断，是否需要更新
         //不需要更新
         if(!isDirty(id)) {
             System.out.println("不需要更新");
             File file = new File(targetPath +id+"/proportion.jpeg");
             if(file.exists()) {
-                images.add(new Image("file:"+targetPath +id+"/proportion.jpeg"));
+                images.set(0,new Image("file:"+targetPath +id+"/proportion.jpeg"));
             }
             file = new File(targetPath +id+"/Trend.jpeg");
             if(file.exists()) {
-                images.add(new Image("file:"+targetPath +id+"/Trend.jpeg"));
+                images.set(1,new Image("file:"+targetPath +id+"/Trend.jpeg"));
             }
             return;
         }
@@ -170,7 +172,7 @@ public class ImageGenerator {
             //导出图片
             OutputStream os = new FileOutputStream(targetPath +id+"/proportion.jpeg");
             ChartUtils.writeChartAsJPEG(os,chart,1000,800);
-            images.add(new Image("file:"+targetPath +id+"/proportion.jpeg"));
+            images.set(0,new Image("file:"+targetPath +id+"/proportion.jpeg"));
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -224,7 +226,7 @@ public class ImageGenerator {
                 OutputStream os = new FileOutputStream(targetPath +id+"/Trend.jpeg");
                 ChartUtils.writeChartAsJPEG(os,chart,1000,800);
                 //imagesPaths.add(targetPath+id+"/Trend.jpeg");
-                images.add(new Image("file:"+targetPath+id+"/Trend.jpeg"));
+                images.set(1, new Image("file:"+targetPath+id+"/Trend.jpeg"));
             }
         }
         catch (Exception e) {
