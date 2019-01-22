@@ -1,6 +1,8 @@
 package uidesign;
 
 
+import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,6 +18,7 @@ import visualize.ImageGenerator;
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class Controller{
     public Canvas ground;
@@ -107,16 +110,22 @@ public class Controller{
         DatasetChange = false;
     }
 
-    public void toShowPicture(MouseEvent mouseEvent) {
+    public void toShowPicture(MouseEvent mouseEvent) throws InterruptedException{
         GraphicsContext gc = ground.getGraphicsContext2D();
         Image image = new Image("/loading.jpg");
         gc.drawImage(image, 0, 100,952,542);
         System.out.println("success");
-        int row = ShowId.getSelectionModel().getFocusedIndex();
-        String s = studentInfos.get(row).getSID();
-        currentId = s;
-        System.out.println(s);
-        showPicture();
+        TimeUnit.MILLISECONDS.sleep(20);
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                int row = ShowId.getSelectionModel().getFocusedIndex();
+                String s = studentInfos.get(row).getSID();
+                currentId = s;
+                System.out.println(s);
+                showPicture();
+            }
+        });
     }
 
     public void showPicture(){
