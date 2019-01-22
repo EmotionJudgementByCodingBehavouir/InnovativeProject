@@ -1,4 +1,4 @@
-package cn.edu.nju.cs;
+package uidesign;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

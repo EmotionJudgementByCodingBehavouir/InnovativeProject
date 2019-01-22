@@ -44,7 +44,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>cn.edu.nju.cs.Main</mainClass>
+                                    <mainClass>uidesign.Main</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

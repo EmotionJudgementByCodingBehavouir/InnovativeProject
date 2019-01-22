@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.canvas.Canvas?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="/system.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.nju.cs.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="/system.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uidesign.Controller">
    <children>
-      <AnchorPane layoutX="-3.0" layoutY="-3.0" prefHeight="400.0" prefWidth="600.0">
-         <children>
-            <Button fx:id="predictButton" layoutX="266.0" layoutY="170.0" mnemonicParsing="false" onAction="#predictHandler" text="Button" />
-         </children>
-      </AnchorPane>
+      <Canvas fx:id="ground" height="750.0" layoutX="235.0" layoutY="32.0" width="750.0" />
+      <MenuBar opacity="0.9">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Search">
+               <items>
+                  <MenuItem fx:id="setid" mnemonicParsing="false" onAction="#toSetId" text="SetId" />
+                  <MenuItem fx:id="show" mnemonicParsing="false" onAction="#toShow" text="show" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#toSetModel" text="Set ModelPath" />
+                  <MenuItem mnemonicParsing="false" onAction="#toSetDataset" text="Set DatasetPath" />
+                  <MenuItem mnemonicParsing="false" onAction="#toSetTarget" text="Set TargetPath" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <TableView fx:id="ShowId" editable="true" layoutX="27.0" layoutY="120.0" onMouseClicked="#toShowPicture" prefHeight="526.0" prefWidth="150.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="150.0" text="ID" />
+         </columns></TableView>
+      <Button fx:id="init" layoutX="8.0" layoutY="47.0" mnemonicParsing="false" onAction="#toInitialize" text="initialize" />
+      <Button layoutX="106.0" layoutY="47.0" mnemonicParsing="false" onAction="#toAdd" text="update" />
    </children>
-</AnchorPane>
+</Pane>
